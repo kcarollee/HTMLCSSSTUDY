@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*put a border around EVERY html elements*/
+
+/*
+*{
+    border: 1px solid red
+}
+*/
+
+/*tag selectors*/
+/*
+h1 {
+    border: 1px solid red;
+}
+
+h2 {
+    border: 2px solid green;
+}
+
+h3 {
+    border: 1px solid blue;
+}
+*/
+/*child selectors*/
+p strong {
+    border: 1px solid blue;
+}
+
+/* including > between ul and li causes only 
+the first child of ul (li) to have borders.
+nth-of-type: order selector
+*/
+
+ul li:nth-of-type(1){
+    border: 1px solid black;
+}
+ul li:nth-of-type(2){
+    border: 1px solid blue;
+}
+ul li:nth-of-type(3){
+    border: 1px solid violet;
+}
+ul li:nth-of-type(4){
+    border: 1px solid green;
+}
+
+ul li:last-child{
+    border: 1px solid red;
+}
+
+/* group selectors*/
+
+h1, h2, h3 {
+    border: 1px solid black;
+}
+
+h1:hover, h2:hover, h3:hover{
+    border: 1px solid red;
+}
+
+/*property selectors*/
+
+input[type="text"]{
+    border: 1px solid blue;
+}
+
+input[type="password"]{
+    border: 1px solid red;
+}
+
+
+
+
