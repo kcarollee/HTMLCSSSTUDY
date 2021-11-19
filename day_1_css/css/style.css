@@ -1,4 +1,10 @@
 @charset "utf-8";
+
+html {
+    font-size: 16px;
+
+}
+
 /*put a border around EVERY html elements*/
 
 /*
@@ -33,15 +39,19 @@ nth-of-type: order selector
 
 ul li:nth-of-type(1){
     border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
 }
 ul li:nth-of-type(2){
     border: 1px solid blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 ul li:nth-of-type(3){
     border: 1px solid violet;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul li:nth-of-type(4){
     border: 1px solid green;
+    font-family: monospace;
 }
 
 ul li:last-child{
@@ -50,12 +60,24 @@ ul li:last-child{
 
 /* group selectors*/
 
-h1, h2, h3 {
+h1, h2 {
     border: 1px solid black;
+    font-weight: normal;
 }
 
-h1:hover, h2:hover, h3:hover{
+h1:hover, h2:hover {
     border: 1px solid red;
+    font-weight: bold;
+}
+
+h3:before{
+    content: "before content";
+    color: blue;
+}
+
+h3:after{
+    content: "after content";
+    color: red;
 }
 
 /*property selectors*/
@@ -67,6 +89,37 @@ input[type="text"]{
 input[type="password"]{
     border: 1px solid red;
 }
+
+/*class selectors*/
+
+p.text1 {
+    border: 1px solid blue;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.text2 {
+    border: 1px solid green; 
+}
+
+/*id selectors*/
+
+#test {
+    border: 1px solid black;
+}
+
+article h1 {
+    font-size: 3rem;
+}
+
+article p {
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
 
 
 
